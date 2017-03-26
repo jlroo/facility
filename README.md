@@ -2,7 +2,7 @@
 ### Spring Framework Web Application
 
 The Spring Framework is an application framework and inversion of control container for the Java platform. The framework's core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE platform.
-More information here: [![https://spring.io/](https://spring.io/)]
+More information here: [https://spring.io/](https://spring.io/)
 ## Running the JAR application 
 
 **System requirements**
@@ -39,7 +39,7 @@ Application routes:
 /facility/add                      ,produces=[application/json] FacilityController.addFacility()
 /facility/all                      ,produces=[application/json] FacilityController.getALL()
 /facility/delete/{id}              ,produces=[application/json] FacilityController.deleteByID()
-/facility/maintenance/{id}         ,produces=[application/json] MaintenanceController.getFacility(int)
+/facility/maintenance/{id}         ,produces=[application/json] MaintenanceController.getFacility()
 /facility/maintenance/add          ,produces=[application/json] MaintenanceController.addMaintenance()
 /facility/maintenance/all          ,produces=[application/json] MaintenanceController.getALL()
 /facility/maintenance/delete/{id}  ,produces=[application/json] MaintenanceController.deleteByID()
