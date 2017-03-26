@@ -3,8 +3,8 @@
 
 The Spring Framework is an application framework and inversion of control container for the Java platform. The framework's core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE platform.
 More information here: [https://spring.io/](https://spring.io/)
-## Running the JAR application 
 
+## Running the JAR application 
 **System requirements**
 * Java 8 SDK or later
 
@@ -24,31 +24,30 @@ Then run the application with the java compiler:
  
 ```
 
-The applicaition can be access locally at:
+The application can be access locally at:
 
 `http://localhost:8080/facility/`
 
 Application routes:
 
 
-```sh
+|Routes|Response Type|Method|
+|------|-------------|------|
+|/chaos/rate/{rate} |application/json |ChaosController.setRate()|
+|/facility/delete    |application/json |FacilityController.cleanDB()|
+|/facility/{id}      |application/json | FacilityController.getFacility()|
+|/facility/add       |application/json |FacilityController.addFacility()|
+|/facility/all                      |application/json| FacilityController.getALL()|
+|/facility/delete/{id}              |application/json| FacilityController.deleteByID()|
+|/facility/maintenance/{id}         |application/json| MaintenanceController.getFacility()|
+|/facility/maintenance/add          |application/json| MaintenanceController.addMaintenance()|
+|/facility/maintenance/all          |application/json| MaintenanceController.getALL()|
+|/facility/maintenance/delete/{id}  |application/json| MaintenanceController.deleteByID()|
+|/facility/use/{id}                 |application/json| UseController.getMaintenance()|
+|/facility/use/add                  |application/json| UseController.addFacilityUse()|
+|/facility/use/all                  |application/json| UseController.getALL()|
+|/facility/use/delete/{id}          |application/json| UseController.deleteByID()|
 
-/chaos/rate/{rate}                 ,produces=[application/json] ChaosController.setRate()
-/facility/delete                   ,produces=[application/json] FacilityController.cleanDB()
-/facility/{id}                     ,produces=[application/json] FacilityController.getFacility()
-/facility/add                      ,produces=[application/json] FacilityController.addFacility()
-/facility/all                      ,produces=[application/json] FacilityController.getALL()
-/facility/delete/{id}              ,produces=[application/json] FacilityController.deleteByID()
-/facility/maintenance/{id}         ,produces=[application/json] MaintenanceController.getFacility()
-/facility/maintenance/add          ,produces=[application/json] MaintenanceController.addMaintenance()
-/facility/maintenance/all          ,produces=[application/json] MaintenanceController.getALL()
-/facility/maintenance/delete/{id}  ,produces=[application/json] MaintenanceController.deleteByID()
-/facility/use/{id}]                ,produces=[application/json] UseController.getMaintenance()
-/facility/use/add]                 ,produces=[application/json] UseController.addFacilityUse()
-/facility/use/all]                 ,produces=[application/json] UseController.getALL()
-/facility/use/delete/{id}]         ,produces=[application/json] UseController.deleteByID()
-
-```
 
 To increase traffic to the system run the Facility client jar:
  
@@ -85,20 +84,21 @@ java -jar  target/client.jar
 ![](doc/systemDiagram.png)
 
 ### DB Table Structure
+
 ```sh
 psql (9.6.2, server 9.6.1)
+
 facilitydb=> \d
                      List of relations
  Schema |             Name              |   Type   | Owner
 --------+-------------------------------+----------+--------
  public | facility                      | table    | devops
  public | facility_details              | table    | devops
- public | facility_facility_id_seq      | sequence | devops
  public | facility_use                  | table    | devops
  public | facility_use_order_number_seq | sequence | devops
  public | inspection                    | table    | devops
  public | maintenance                   | table    | devops
-(7 rows)
+(6 rows)
 
 facilitydb=> \d facility
 
