@@ -48,8 +48,9 @@ Application routes:
 |/facility/use/all                  |application/json| UseController.getALL()|
 |/facility/use/delete/{id}          |application/json| UseController.deleteByID()|
 
+## Testing the spring framework context
 
-To increase traffic to the system run the Facility client jar:
+To test the system we can generate traffic using the Facility client jar:
  
 ```sh
 java -jar  target/client.jar
@@ -67,10 +68,28 @@ java -jar  target/client.jar
  	 5) Quit
 ```
 
-## Testing the spring framework context
 
-### Facility Client
-![](doc/test1.png)
+## AWS RDS - PostgreSQL Database
+
+|Instance | Description|
+----------|------------|
+TypeType|Small Instance - Current Generation|
+Number of virtual cores|	1 vCPU|
+Memory|2 GiB|
+Network Performance | Low
+Free Tier Eligible|	Yes|
+
+Default settings for maximum number of concurrent connections 'max_connections' settings :
+
+* LEAST({DBInstanceClassMemory/9531392},5000)
+
+ setting | min_val | max_val | boot_val | reset_val | 
+---------|---------|---------|----------|-----------|
+ 87      |  1      | 262143  | 100      | 87        |
+ 
+ 
+To increase performance change to:
+* GREATEST({DBInstanceClassMemory/9531392},5000)
 
 ### FacilityDB Traffic Use Client
 ![](doc/facilityDB_traffic.png)
@@ -78,10 +97,6 @@ java -jar  target/client.jar
 ### Spring Maintenance Client
 ![](doc/facilityDB_performance.png)
 
-# Project Diagrams
-
-### Composite Structure
-![](doc/systemDiagram.png)
 
 ### DB Table Structure
 
@@ -175,3 +190,8 @@ Foreign-key constraints:
     "maintenance_facility_id_fkey"
 
 ```
+
+# Project UML Diagram
+
+### Composite Structure
+![](doc/systemDiagram.png)

@@ -1,38 +1,197 @@
-2017-03-26 14:22:32.052  INFO 60306 --- [main] edu.luc.cs439.system.facility.Main       : Starting Main on jlroo.web-pass.com with PID 60306 (/Users/jlroo/space/LOYOLA/GRAD/S17/COMP439/workspace/FacilityManagment/facility/target/classes started by jlroo in /Users/jlroo/space/LOYOLA/GRAD/S17/COMP439/workspace/FacilityManagment/facility)
-2017-03-26 14:22:32.060  INFO 60306 --- [main] edu.luc.cs439.system.facility.Main       : No active profile set, falling back to default profiles: default
-2017-03-26 14:22:32.566  INFO 60306 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6293abcc: startup date [Sun Mar 26 14:22:32 CDT 2017]; root of context hierarchy
-2017-03-26 14:22:37.615  INFO 60306 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
-2017-03-26 14:22:37.679  INFO 60306 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
-2017-03-26 14:22:37.682  INFO 60306 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
-2017-03-26 14:22:37.924  INFO 60306 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2017-03-26 14:22:37.925  INFO 60306 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5462 ms
-2017-03-26 14:22:38.427  INFO 60306 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
-2017-03-26 14:22:38.432  INFO 60306 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2017-03-26 14:22:38.433  INFO 60306 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2017-03-26 14:22:38.433  INFO 60306 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2017-03-26 14:22:38.434  INFO 60306 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2017-03-26 14:22:39.032  INFO 60306 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6293abcc: startup date [Sun Mar 26 14:22:32 CDT 2017]; root of context hierarchy
-2017-03-26 14:22:39.180  INFO 60306 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chaos/rate/{rate}],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.ChaosController.setRate(int)
-2017-03-26 14:22:39.184  INFO 60306 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/{id}],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.FacilityController.getFacility(int)
-2017-03-26 14:22:39.184  INFO 60306 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/add],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.FacilityController.addFacility(int,int,java.lang.Boolean,int,java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean,java.lang.String)
-2017-03-26 14:22:39.185  INFO 60306 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/delete],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.FacilityController.cleanDB()
-2017-03-26 14:22:39.187  INFO 60306 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/all],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.FacilityController.getALL()
-2017-03-26 14:22:39.188  INFO 60306 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/delete/{id}],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.FacilityController.deleteByID(int)
-2017-03-26 14:22:39.191  INFO 60306 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/maintenance/{id}],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.MaintenanceController.getFacility(int)
-2017-03-26 14:22:39.191  INFO 60306 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/maintenance/add],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.MaintenanceController.addMaintenance(int,java.lang.String,java.lang.String,int,java.lang.String)
-2017-03-26 14:22:39.192  INFO 60306 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/maintenance/all],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.MaintenanceController.getALL()
-2017-03-26 14:22:39.192  INFO 60306 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/maintenance/delete/{id}],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.MaintenanceController.deleteByID(int)
-2017-03-26 14:22:39.195  INFO 60306 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/use/{id}],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.UseController.getMaintenance(int)
-2017-03-26 14:22:39.195  INFO 60306 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/use/add],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.UseController.addFacilityUse(int,int,java.lang.String,java.lang.String,java.lang.Boolean,java.lang.String,java.lang.String,java.lang.Boolean,java.lang.String)
-2017-03-26 14:22:39.195  INFO 60306 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/use/all],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.UseController.getALL()
-2017-03-26 14:22:39.196  INFO 60306 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/use/delete/{id}],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.UseController.deleteByID(int)
-2017-03-26 14:22:39.206  INFO 60306 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2017-03-26 14:22:39.206  INFO 60306 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2017-03-26 14:22:39.265  INFO 60306 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-03-26 14:22:39.265  INFO 60306 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-03-26 14:22:39.325  INFO 60306 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-03-26 14:22:39.870  INFO 60306 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2017-03-26 14:22:40.058  INFO 60306 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
-2017-03-26 14:22:40.067  INFO 60306 --- [main] edu.luc.cs439.system.facility.Main       : Started Main in 9.349 seconds (JVM running for 12.22)
-2017-03-26 14:22:50.198  INFO 60306 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6293abcc: startup date [Sun Mar 26 14:22:32 CDT 2017]; root of context hierarchy
-2017-03-26 14:22:50.199  INFO 60306 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-03-27 18:49:03.534  INFO 94717 --- [main] edu.luc.cs439.system.facility.Main       : Starting Main v1.0-SNAPSHOT on jlroo.local with PID 94717 (/Users/jlroo/space/LOYOLA/GRAD/S17/COMP439/workspace/FacilityManagment/facility/target/facility.jar started by jlroo in /Users/jlroo/space/LOYOLA/GRAD/S17/COMP439/workspace/FacilityManagment/facility)
+2017-03-27 18:49:03.541  INFO 94717 --- [main] edu.luc.cs439.system.facility.Main       : No active profile set, falling back to default profiles: default
+2017-03-27 18:49:03.769  INFO 94717 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77a567e1: startup date [Mon Mar 27 18:49:03 CDT 2017]; root of context hierarchy
+2017-03-27 18:49:07.231  INFO 94717 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-03-27 18:49:07.266  INFO 94717 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-03-27 18:49:07.268  INFO 94717 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-03-27 18:49:07.466  INFO 94717 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-03-27 18:49:07.466  INFO 94717 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3703 ms
+2017-03-27 18:49:07.809  INFO 94717 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-27 18:49:07.817  INFO 94717 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-27 18:49:07.818  INFO 94717 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-03-27 18:49:07.818  INFO 94717 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-03-27 18:49:07.818  INFO 94717 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-03-27 18:49:08.473  INFO 94717 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77a567e1: startup date [Mon Mar 27 18:49:03 CDT 2017]; root of context hierarchy
+2017-03-27 18:49:08.653  INFO 94717 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chaos/rate/{rate}],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.ChaosController.setRate(int)
+2017-03-27 18:49:08.657  INFO 94717 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/delete],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.FacilityController.cleanDB()
+2017-03-27 18:49:08.658  INFO 94717 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/{id}],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.FacilityController.getFacility(int)
+2017-03-27 18:49:08.659  INFO 94717 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/add],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.FacilityController.addFacility(int,int,java.lang.Boolean,int,java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean,java.lang.String)
+2017-03-27 18:49:08.659  INFO 94717 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/all],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.FacilityController.getALL()
+2017-03-27 18:49:08.659  INFO 94717 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/delete/{id}],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.FacilityController.deleteByID(int)
+2017-03-27 18:49:08.663  INFO 94717 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/maintenance/{id}],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.MaintenanceController.getFacility(int)
+2017-03-27 18:49:08.666  INFO 94717 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/maintenance/all],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.MaintenanceController.getALL()
+2017-03-27 18:49:08.667  INFO 94717 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/maintenance/add],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.MaintenanceController.addMaintenance(int,java.lang.String,java.lang.String,int,java.lang.String)
+2017-03-27 18:49:08.667  INFO 94717 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/maintenance/delete/{id}],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.MaintenanceController.deleteByID(int)
+2017-03-27 18:49:08.671  INFO 94717 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/use/all],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.UseController.getALL()
+2017-03-27 18:49:08.671  INFO 94717 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/use/{id}],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.UseController.getMaintenance(int)
+2017-03-27 18:49:08.671  INFO 94717 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/use/add],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.UseController.addFacilityUse(int,int,java.lang.String,java.lang.String,java.lang.Boolean,java.lang.String,java.lang.String,java.lang.Boolean,java.lang.String)
+2017-03-27 18:49:08.672  INFO 94717 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/facility/use/delete/{id}],produces=[application/json]}" onto public java.lang.String edu.luc.cs439.system.facility.web.controllers.UseController.deleteByID(int)
+2017-03-27 18:49:08.680  INFO 94717 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-27 18:49:08.681  INFO 94717 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-27 18:49:08.740  INFO 94717 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-27 18:49:08.740  INFO 94717 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-27 18:49:08.831  INFO 94717 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-27 18:49:09.202  INFO 94717 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-27 18:49:09.330  INFO 94717 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-03-27 18:49:09.339  INFO 94717 --- [main] edu.luc.cs439.system.facility.Main       : Started Main in 6.765 seconds (JVM running for 8.394)
+2017-03-27 18:50:49.650  INFO 94717 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-03-27 18:50:49.653  INFO 94717 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-03-27 18:50:49.730  INFO 94717 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 74 ms
+2017-03-27 18:50:49.830 ERROR 94717 --- [http-nio-8080-exec-1] e.l.c.s.facility.Chaos.DefaultLogger     : Facility in method getFacility had problem Latency
+2017-03-27 18:50:50.357 ERROR 94717 --- [http-nio-8080-exec-5] e.l.c.s.facility.Chaos.DefaultLogger     : Facility in method GET had problem Latency
+2017-03-27 18:51:09.937 ERROR 94717 --- [http-nio-8080-exec-6] e.l.c.s.facility.Chaos.DefaultLogger     : Facility in method getFacility had problem Latency
+2017-03-27 18:51:10.130 ERROR 94717 --- [http-nio-8080-exec-9] e.l.c.s.facility.Chaos.DefaultLogger     : Facility in method GET had problem Db connection lost
+2017-03-27 18:51:10.133 ERROR 94717 --- [http-nio-8080-exec-9] e.l.c.s.f.service.FacilityService        : Could not establish connection
+2017-03-27 18:51:35.606 ERROR 94717 --- [http-nio-8080-exec-7] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:51:35.663 ERROR 94717 --- [http-nio-8080-exec-3] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:51:35.668 ERROR 94717 --- [http-nio-8080-exec-10] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:51:35.674 ERROR 94717 --- [http-nio-8080-exec-11] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:52:34.766 ERROR 94717 --- [http-nio-8080-exec-4] e.l.c.s.facility.Chaos.DefaultLogger     : Facility in method getFacility had problem Latency
+2017-03-27 18:52:34.813 ERROR 94717 --- [http-nio-8080-exec-11] e.l.c.s.facility.Chaos.DefaultLogger     : Facility in method getFacility had problem Latency
+2017-03-27 18:52:35.034 ERROR 94717 --- [http-nio-8080-exec-2] e.l.c.s.facility.Chaos.DefaultLogger     : Facility in method GET had problem Db connection lost
+2017-03-27 18:52:35.035 ERROR 94717 --- [http-nio-8080-exec-2] e.l.c.s.f.service.FacilityService        : Could not establish connection
+2017-03-27 18:52:35.251 ERROR 94717 --- [http-nio-8080-exec-15] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:52:35.264 ERROR 94717 --- [http-nio-8080-exec-14] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:52:35.276 ERROR 94717 --- [http-nio-8080-exec-17] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:52:35.279 ERROR 94717 --- [http-nio-8080-exec-16] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:52:35.383 ERROR 94717 --- [http-nio-8080-exec-20] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:52:35.387 ERROR 94717 --- [http-nio-8080-exec-19] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:52:35.391 ERROR 94717 --- [http-nio-8080-exec-12] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:52:35.397 ERROR 94717 --- [http-nio-8080-exec-18] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:52:35.403 ERROR 94717 --- [http-nio-8080-exec-21] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:52:35.407 ERROR 94717 --- [http-nio-8080-exec-13] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:52:35.452 ERROR 94717 --- [http-nio-8080-exec-9] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:52:35.566 ERROR 94717 --- [http-nio-8080-exec-11] e.l.c.s.facility.Chaos.DefaultLogger     : Facility in method GET had problem Latency
+2017-03-27 18:52:35.662 ERROR 94717 --- [http-nio-8080-exec-4] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:52:59.581 ERROR 94717 --- [http-nio-8080-exec-8] e.l.c.s.facility.Chaos.DefaultLogger     : Facility in method getFacility had problem Latency
+2017-03-27 18:52:59.652 ERROR 94717 --- [http-nio-8080-exec-20] e.l.c.s.facility.Chaos.DefaultLogger     : Facility in method getFacility had problem Latency
+2017-03-27 18:52:59.654 ERROR 94717 --- [http-nio-8080-exec-22] e.l.c.s.facility.Chaos.DefaultLogger     : Facility in method getFacility had problem Latency
+2017-03-27 18:52:59.719 ERROR 94717 --- [http-nio-8080-exec-33] e.l.c.s.facility.Chaos.DefaultLogger     : Facility in method getFacility had problem Latency
+2017-03-27 18:52:59.785 ERROR 94717 --- [http-nio-8080-exec-43] e.l.c.s.facility.Chaos.DefaultLogger     : Facility in method getFacility had problem Latency
+2017-03-27 18:52:59.795 ERROR 94717 --- [http-nio-8080-exec-48] e.l.c.s.facility.Chaos.DefaultLogger     : Facility in method getFacility had problem Latency
+2017-03-27 18:52:59.800 ERROR 94717 --- [http-nio-8080-exec-49] e.l.c.s.facility.Chaos.DefaultLogger     : Facility in method getFacility had problem Latency
+2017-03-27 18:52:59.812 ERROR 94717 --- [http-nio-8080-exec-52] e.l.c.s.facility.Chaos.DefaultLogger     : Facility in method getFacility had problem Latency
+2017-03-27 18:52:59.844 ERROR 94717 --- [http-nio-8080-exec-18] e.l.c.s.facility.Chaos.DefaultLogger     : Facility in method GET had problem Db connection lost
+2017-03-27 18:52:59.845 ERROR 94717 --- [http-nio-8080-exec-18] e.l.c.s.f.service.FacilityService        : Could not establish connection
+2017-03-27 18:52:59.870 ERROR 94717 --- [http-nio-8080-exec-12] e.l.c.s.facility.Chaos.DefaultLogger     : Facility in method GET had problem Latency
+2017-03-27 18:52:59.921 ERROR 94717 --- [http-nio-8080-exec-73] e.l.c.s.facility.Chaos.DefaultLogger     : Facility in method getFacility had problem Latency
+2017-03-27 18:52:59.984 ERROR 94717 --- [http-nio-8080-exec-6] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:52:59.994 ERROR 94717 --- [http-nio-8080-exec-37] e.l.c.s.facility.Chaos.DefaultLogger     : Facility in method GET had problem Db connection lost
+2017-03-27 18:53:00.004 ERROR 94717 --- [http-nio-8080-exec-37] e.l.c.s.f.service.FacilityService        : Could not establish connection
+2017-03-27 18:53:00.175 ERROR 94717 --- [http-nio-8080-exec-21] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.185 ERROR 94717 --- [http-nio-8080-exec-17] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.190 ERROR 94717 --- [http-nio-8080-exec-15] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.192 ERROR 94717 --- [http-nio-8080-exec-5] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.198 ERROR 94717 --- [http-nio-8080-exec-28] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.199 ERROR 94717 --- [http-nio-8080-exec-14] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.286 ERROR 94717 --- [http-nio-8080-exec-19] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.300 ERROR 94717 --- [http-nio-8080-exec-23] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.314 ERROR 94717 --- [http-nio-8080-exec-13] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.331 ERROR 94717 --- [http-nio-8080-exec-42] e.l.c.s.facility.Chaos.DefaultLogger     : Facility in method GET had problem Latency
+2017-03-27 18:53:00.339 ERROR 94717 --- [http-nio-8080-exec-4] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.346 ERROR 94717 --- [http-nio-8080-exec-30] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.363 ERROR 94717 --- [http-nio-8080-exec-16] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.380 ERROR 94717 --- [http-nio-8080-exec-27] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.396 ERROR 94717 --- [http-nio-8080-exec-31] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.409 ERROR 94717 --- [http-nio-8080-exec-24] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.417 ERROR 94717 --- [http-nio-8080-exec-9] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.411 ERROR 94717 --- [http-nio-8080-exec-29] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.447 ERROR 94717 --- [http-nio-8080-exec-60] e.l.c.s.facility.Chaos.DefaultLogger     : Facility in method GET had problem Db connection lost
+2017-03-27 18:53:00.460 ERROR 94717 --- [http-nio-8080-exec-60] e.l.c.s.f.service.FacilityService        : Could not establish connection
+2017-03-27 18:53:00.466 ERROR 94717 --- [http-nio-8080-exec-32] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.485 ERROR 94717 --- [http-nio-8080-exec-36] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.490 ERROR 94717 --- [http-nio-8080-exec-57] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.499 ERROR 94717 --- [http-nio-8080-exec-56] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.562 ERROR 94717 --- [http-nio-8080-exec-35] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.566 ERROR 94717 --- [http-nio-8080-exec-40] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.578 ERROR 94717 --- [http-nio-8080-exec-41] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.580 ERROR 94717 --- [http-nio-8080-exec-50] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.610 ERROR 94717 --- [http-nio-8080-exec-47] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.649 ERROR 94717 --- [http-nio-8080-exec-75] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.658 ERROR 94717 --- [http-nio-8080-exec-44] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.662 ERROR 94717 --- [http-nio-8080-exec-61] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.665 ERROR 94717 --- [http-nio-8080-exec-68] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.678 ERROR 94717 --- [http-nio-8080-exec-1] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.680 ERROR 94717 --- [http-nio-8080-exec-69] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.576 ERROR 94717 --- [http-nio-8080-exec-46] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.828 ERROR 94717 --- [http-nio-8080-exec-39] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.828 ERROR 94717 --- [http-nio-8080-exec-53] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.826 ERROR 94717 --- [http-nio-8080-exec-11] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.864 ERROR 94717 --- [http-nio-8080-exec-72] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.865 ERROR 94717 --- [http-nio-8080-exec-76] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.868 ERROR 94717 --- [http-nio-8080-exec-45] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.896 ERROR 94717 --- [http-nio-8080-exec-54] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.900 ERROR 94717 --- [http-nio-8080-exec-58] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.905 ERROR 94717 --- [http-nio-8080-exec-51] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.914 ERROR 94717 --- [http-nio-8080-exec-66] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.869 ERROR 94717 --- [http-nio-8080-exec-59] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.965 ERROR 94717 --- [http-nio-8080-exec-63] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.882 ERROR 94717 --- [http-nio-8080-exec-55] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:00.908 ERROR 94717 --- [http-nio-8080-exec-64] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:01.005 ERROR 94717 --- [http-nio-8080-exec-13] e.l.cs439.system.facility.dal.dbConnect  : FATAL: sorry, too many clients already
+2017-03-27 18:53:01.007 ERROR 94717 --- [http-nio-8080-exec-13] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.073 ERROR 94717 --- [http-nio-8080-exec-85] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:01.080 ERROR 94717 --- [http-nio-8080-exec-33] e.l.cs439.system.facility.dal.dbConnect  : FATAL: remaining connection slots are reserved for non-replication superuser connections
+2017-03-27 18:53:01.081 ERROR 94717 --- [http-nio-8080-exec-33] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.119 ERROR 94717 --- [http-nio-8080-exec-42] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:01.149 ERROR 94717 --- [http-nio-8080-exec-52] e.l.cs439.system.facility.dal.dbConnect  : FATAL: sorry, too many clients already
+2017-03-27 18:53:01.150 ERROR 94717 --- [http-nio-8080-exec-52] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.173 ERROR 94717 --- [http-nio-8080-exec-73] e.l.cs439.system.facility.dal.dbConnect  : FATAL: remaining connection slots are reserved for non-replication superuser connections
+2017-03-27 18:53:01.174 ERROR 94717 --- [http-nio-8080-exec-73] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.181 ERROR 94717 --- [http-nio-8080-exec-48] e.l.cs439.system.facility.dal.dbConnect  : FATAL: remaining connection slots are reserved for non-replication superuser connections
+2017-03-27 18:53:01.183 ERROR 94717 --- [http-nio-8080-exec-48] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.200 ERROR 94717 --- [http-nio-8080-exec-43] e.l.cs439.system.facility.dal.dbConnect  : FATAL: remaining connection slots are reserved for non-replication superuser connections
+2017-03-27 18:53:01.201 ERROR 94717 --- [http-nio-8080-exec-43] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.215 ERROR 94717 --- [http-nio-8080-exec-23] e.l.c.s.f.service.FacilityService        : Facility not found
+2017-03-27 18:53:01.263 ERROR 94717 --- [http-nio-8080-exec-49] e.l.cs439.system.facility.dal.dbConnect  : FATAL: remaining connection slots are reserved for non-replication superuser connections
+2017-03-27 18:53:01.264 ERROR 94717 --- [http-nio-8080-exec-49] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.388 ERROR 94717 --- [http-nio-8080-exec-22] e.l.cs439.system.facility.dal.dbConnect  : FATAL: remaining connection slots are reserved for non-replication superuser connections
+2017-03-27 18:53:01.389 ERROR 94717 --- [http-nio-8080-exec-22] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.406 ERROR 94717 --- [http-nio-8080-exec-20] e.l.cs439.system.facility.dal.dbConnect  : FATAL: remaining connection slots are reserved for non-replication superuser connections
+2017-03-27 18:53:01.409 ERROR 94717 --- [http-nio-8080-exec-20] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.413 ERROR 94717 --- [http-nio-8080-exec-84] e.l.cs439.system.facility.dal.dbConnect  : FATAL: remaining connection slots are reserved for non-replication superuser connections
+2017-03-27 18:53:01.414 ERROR 94717 --- [http-nio-8080-exec-84] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.433 ERROR 94717 --- [http-nio-8080-exec-8] e.l.cs439.system.facility.dal.dbConnect  : FATAL: remaining connection slots are reserved for non-replication superuser connections
+2017-03-27 18:53:01.439 ERROR 94717 --- [http-nio-8080-exec-8] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.518 ERROR 94717 --- [http-nio-8080-exec-82] e.l.cs439.system.facility.dal.dbConnect  : FATAL: remaining connection slots are reserved for non-replication superuser connections
+2017-03-27 18:53:01.521 ERROR 94717 --- [http-nio-8080-exec-82] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.528 ERROR 94717 --- [http-nio-8080-exec-81] e.l.cs439.system.facility.dal.dbConnect  : FATAL: remaining connection slots are reserved for non-replication superuser connections
+2017-03-27 18:53:01.529 ERROR 94717 --- [http-nio-8080-exec-81] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.578 ERROR 94717 --- [http-nio-8080-exec-83] e.l.cs439.system.facility.dal.dbConnect  : FATAL: sorry, too many clients already
+2017-03-27 18:53:01.579 ERROR 94717 --- [http-nio-8080-exec-83] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.653 ERROR 94717 --- [http-nio-8080-exec-78] e.l.cs439.system.facility.dal.dbConnect  : FATAL: remaining connection slots are reserved for non-replication superuser connections
+2017-03-27 18:53:01.654 ERROR 94717 --- [http-nio-8080-exec-78] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.672 ERROR 94717 --- [http-nio-8080-exec-77] e.l.cs439.system.facility.dal.dbConnect  : FATAL: remaining connection slots are reserved for non-replication superuser connections
+2017-03-27 18:53:01.673 ERROR 94717 --- [http-nio-8080-exec-77] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.682 ERROR 94717 --- [http-nio-8080-exec-67] e.l.cs439.system.facility.dal.dbConnect  : FATAL: remaining connection slots are reserved for non-replication superuser connections
+2017-03-27 18:53:01.683 ERROR 94717 --- [http-nio-8080-exec-67] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.701 ERROR 94717 --- [http-nio-8080-exec-80] e.l.cs439.system.facility.dal.dbConnect  : FATAL: sorry, too many clients already
+2017-03-27 18:53:01.702 ERROR 94717 --- [http-nio-8080-exec-80] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.719 ERROR 94717 --- [http-nio-8080-exec-79] e.l.cs439.system.facility.dal.dbConnect  : FATAL: sorry, too many clients already
+2017-03-27 18:53:01.721 ERROR 94717 --- [http-nio-8080-exec-79] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.727 ERROR 94717 --- [http-nio-8080-exec-27] e.l.cs439.system.facility.dal.dbConnect  : FATAL: sorry, too many clients already
+2017-03-27 18:53:01.730 ERROR 94717 --- [http-nio-8080-exec-27] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.735 ERROR 94717 --- [http-nio-8080-exec-30] e.l.cs439.system.facility.dal.dbConnect  : FATAL: remaining connection slots are reserved for non-replication superuser connections
+2017-03-27 18:53:01.736 ERROR 94717 --- [http-nio-8080-exec-30] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.755 ERROR 94717 --- [http-nio-8080-exec-5] e.l.cs439.system.facility.dal.dbConnect  : FATAL: sorry, too many clients already
+2017-03-27 18:53:01.756 ERROR 94717 --- [http-nio-8080-exec-5] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.763 ERROR 94717 --- [http-nio-8080-exec-28] e.l.cs439.system.facility.dal.dbConnect  : FATAL: sorry, too many clients already
+2017-03-27 18:53:01.764 ERROR 94717 --- [http-nio-8080-exec-28] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.771 ERROR 94717 --- [http-nio-8080-exec-86] e.l.cs439.system.facility.dal.dbConnect  : FATAL: sorry, too many clients already
+2017-03-27 18:53:01.772 ERROR 94717 --- [http-nio-8080-exec-86] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.787 ERROR 94717 --- [http-nio-8080-exec-7] e.l.cs439.system.facility.dal.dbConnect  : FATAL: remaining connection slots are reserved for non-replication superuser connections
+2017-03-27 18:53:01.788 ERROR 94717 --- [http-nio-8080-exec-7] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.809 ERROR 94717 --- [http-nio-8080-exec-11] e.l.cs439.system.facility.dal.dbConnect  : FATAL: remaining connection slots are reserved for non-replication superuser connections
+2017-03-27 18:53:01.812 ERROR 94717 --- [http-nio-8080-exec-11] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.926 ERROR 94717 --- [http-nio-8080-exec-37] e.l.cs439.system.facility.dal.dbConnect  : FATAL: remaining connection slots are reserved for non-replication superuser connections
+2017-03-27 18:53:01.928 ERROR 94717 --- [http-nio-8080-exec-37] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.938 ERROR 94717 --- [http-nio-8080-exec-46] e.l.cs439.system.facility.dal.dbConnect  : FATAL: sorry, too many clients already
+2017-03-27 18:53:01.940 ERROR 94717 --- [http-nio-8080-exec-46] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.961 ERROR 94717 --- [http-nio-8080-exec-51] e.l.cs439.system.facility.dal.dbConnect  : FATAL: remaining connection slots are reserved for non-replication superuser connections
+2017-03-27 18:53:01.962 ERROR 94717 --- [http-nio-8080-exec-51] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.971 ERROR 94717 --- [http-nio-8080-exec-66] e.l.cs439.system.facility.dal.dbConnect  : FATAL: remaining connection slots are reserved for non-replication superuser connections
+2017-03-27 18:53:01.973 ERROR 94717 --- [http-nio-8080-exec-66] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 18:53:01.981 ERROR 94717 --- [http-nio-8080-exec-32] e.l.cs439.system.facility.dal.dbConnect  : FATAL: remaining connection slots are reserved for non-replication superuser connections
+2017-03-27 18:53:01.982 ERROR 94717 --- [http-nio-8080-exec-32] e.l.c.s.f.service.FacilityService        : null
+2017-03-27 19:03:56.189  INFO 94717 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77a567e1: startup date [Mon Mar 27 18:49:03 CDT 2017]; root of context hierarchy
+2017-03-27 19:03:56.204  INFO 94717 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown

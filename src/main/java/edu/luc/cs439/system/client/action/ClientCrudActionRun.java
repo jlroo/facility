@@ -62,7 +62,6 @@ public class ClientCrudActionRun implements Runnable {
                 }
             }
 
-
 		} catch(Exception e) {
 			synchronized(_errors){
 				_errors.add(e);
