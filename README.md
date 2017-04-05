@@ -71,6 +71,8 @@ java -jar  target/client.jar
 
 ## AWS RDS - PostgreSQL Database
 
+[AmazonRDS - DBInstance](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html)
+
 |Instance | Description|
 ----------|------------|
 TypeType|Small Instance - Current Generation|
@@ -91,10 +93,11 @@ Default settings for maximum number of concurrent connections 'max_connections' 
 To increase performance change to:
 * GREATEST({DBInstanceClassMemory/9531392},5000)
 
-### FacilityDB Traffic Use Client
+### Database Traffic Summary
 ![](doc/facilityDB_traffic.png)
 
-### Spring Maintenance Client
+
+### Database Performance Summary
 ![](doc/facilityDB_performance.png)
 
 
