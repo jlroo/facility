@@ -94,10 +94,25 @@ To increase performance change to:
 * GREATEST({DBInstanceClassMemory/9531392},5000)
 
 ### Database Traffic Summary
+**Network Transmit Throughput**
+
+* The outgoing (Transmit) network traffic on the DB instance, including both customer database traffic and Amazon RDS traffic used for monitoring and replication.
+* Units: Bytes/second
+
 ![](doc/facilityDB_traffic.png)
 
 
 ### Database Performance Summary
+**WriteIOPS**
+
+* The average number of disk I/O operations per second. 
+* Units: Count/Second
+
+**WriteLatency**
+	
+* The average amount of time taken per disk I/O operation.
+* Units: Seconds
+
 ![](doc/facilityDB_performance.png)
 
 
