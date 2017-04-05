@@ -93,6 +93,9 @@ Default settings for maximum number of concurrent connections 'max_connections' 
 To increase performance change to:
 * GREATEST({DBInstanceClassMemory/9531392},5000)
 
+More information about AWS RDS database metrics can be found here:
+* [monitoring](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/rds-metricscollected.html)
+
 ### Database Traffic Summary
 **Network Transmit Throughput**
 
